@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.avif" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.avif" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Rock, Paper, Siccor</title>
+  </head>
+  <body>
+    <div class="filter-background"></div>
+    <div class="get-name">
+      <label for="Name">Your Name 🤔</label>
+      <input
+        type="text"
+        minlength="2"
+        maxlength="8"
+        required
+        placeholder="( 2-8 Characters)"
+        id="name"
+        name="Name"
+        netlify
+      />
+      <button class="get-name-btn">Enter</button>
+    </div>
+    <main class="container">
+      <div class="filter hidden">
+        <h1 class="filter-title"></h1>
+        <div class="filter-score-box">
+          <div class="player-score-box">
+            <p class="player-name-score">Player</p>
+            <p class="player-score filter-score"></p>
+          </div>
+          <div class="competor-score-box">
+            <p class="competor-name-score">Com</p>
+            <p class="competor-score filter-score"></p>
+          </div>
+        </div>
+        <button class="btn-filter">Close</button>
+      </div>
+      <div class="score-box">
+        <ul class="score-board">
+          <li class="score">
+            <img src="img/dot.avif" alt="human icon" class="score-img" />
+          </li>
+          <li class="score">
+            <img src="img/dot.avif" alt="human icon" class="score-img" />
+          </li>
+          <li class="score">
+            <img src="img/dot.avif" alt="human icon" class="score-img" />
+          </li>
+        </ul>
+      </div>
+      <div class="alert-box">
+        <img
+          src="img/kill.avif"
+          alt=""
+          class="alert-win-img alert-img hidden"
+        />
+        <img
+          src="img/bekill.avif"
+          alt=""
+          class="alert-lose-img alert-img hidden"
+        />
+        <img
+          src="img/draw.avif"
+          alt=""
+          class="alert-draw-img alert-img hidden"
+        />
+      </div>
+      <div class="player-box">
+        <h1 class="player-name name">Player's Name</h1>
+        <div class="player-img-box img-box"></div>
+        <div class="select-box">
+          <button class="select-btn btn" id="Rock">
+            <img src="img/Rock.avif" alt="Rock hand" class="select-img" />
+          </button>
+          <button class="select-btn btn" id="Siccor">
+            <img src="img/Siccor.avif" alt="Siccor hand" class="select-img" />
+          </button>
+          <button class="select-btn btn" id="Papper">
+            <img src="img/Papper.avif" alt="Papper hand" class="select-img" />
+          </button>
+        </div>
+      </div>
+      <div class="competor-box">
+        <h1 class="competor-name name">Competator</h1>
+        <div class="competor-img-box img-box">
+          <!-- <img src="img/Papper.avif" alt="" class="display-img" /> -->
+        </div>
+        <div class="menu-box">
+          <button class="restart-btn menu-btn btn">🔄 restart</button>
+          <button class="difficult-btn menu-btn btn">
+            difficult: <span class="difficult-level">3️⃣</span>
+          </button>
+        </div>
+      </div>
+    </main>
+    <div class="loading hidden">
+      <img src="img/human.avif" alt="" class="loading-img" />
+      <img src="img/robot.avif" alt="" class="loading-img" />
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/responsive.js"></script>
+  </body>
+</html>

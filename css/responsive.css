@@ -1,0 +1,224 @@
+/* WIDTH = 1200px */
+@media (max-width: 75em) {
+  .container {
+    margin: 0 2.4rem;
+  }
+}
+
+/* WIDTH = 1008px */
+
+@media (max-width: 63em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .filter {
+    width: 42rem;
+    padding: 2.4rem;
+  }
+
+  .player-box {
+    padding: 10.2rem 11rem 4.8rem 2.4rem;
+  }
+
+  .competor-box {
+    padding: 10.2rem 2.4rem 4.8rem 11rem;
+  }
+
+  .score-img {
+    width: 3.8rem;
+  }
+
+  .display-img {
+    width: 22rem;
+  }
+
+  .alert-img {
+    width: 38rem;
+  }
+}
+
+/* WIDTH = 848px */
+
+@media (max-width: 53em) {
+  .alert-img {
+    width: 30rem;
+  }
+}
+
+/* WIDTH = 688px */
+
+@media (max-width: 43em) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    margin: 0 1.2rem;
+    height: 98vh;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .score-box {
+    left: 6%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  .score-board {
+    flex-direction: column-reverse;
+  }
+
+  .alert-box {
+    top: 50%;
+  }
+
+  .score {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .score-img {
+    width: auto;
+    height: 4rem;
+  }
+
+  .img-box {
+    height: auto;
+    margin: 0;
+  }
+
+  .competor-box .display-img {
+    transform: rotate(90deg);
+  }
+
+  .competor-box .img-box {
+    margin-top: 3.2rem;
+  }
+  .player-box .img-box {
+    margin-bottom: 3.2rem;
+  }
+
+  .player-box .display-img {
+    transform: rotate(-90deg);
+  }
+
+  .player-name {
+    display: none;
+  }
+
+  .player-box {
+    grid-row: 2;
+
+    padding: 6.4rem;
+
+    justify-content: center;
+  }
+
+  .competor-box {
+    padding: 6.4rem;
+
+    justify-content: center;
+  }
+
+  .competor-name {
+    display: none;
+  }
+
+  .select-box {
+    top: 91%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  .restart-btn {
+    top: 3%;
+    left: 25%;
+
+    width: 21rem;
+  }
+
+  .difficult-btn {
+    position: absolute;
+    margin: 0;
+    width: 21rem;
+
+    top: 3%;
+    left: 75%;
+
+    transform: translateX(-50%);
+  }
+
+  .get-name {
+    padding: 1.8rem;
+    gap: 1.8rem;
+  }
+
+  .filter {
+    width: 36rem;
+    height: 26.5rem;
+
+    gap: 2.4rem;
+    padding: 1.2rem;
+  }
+
+  .filter-title {
+    font-size: 2.4rem;
+  }
+
+  .filter-score {
+    font-size: 6.2rem;
+  }
+
+  .player-name-score {
+    font-size: 1.4rem;
+  }
+
+  .competor-name-score {
+    font-size: 1.4rem;
+  }
+}
+
+.no-flexbox-gap .score-board li:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .player-box:not(:last-child) {
+  margin-bottom: 6.4rem;
+}
+
+.no-flexbox-gap .competor-box:not(:last-child) {
+  margin-bottom: 6.4rem;
+}
+
+.no-flexbox-gap .select-box:not(:last-child) {
+  margin-right: 2.4rem;
+}
+
+.no-flexbox-gap .filter:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+.no-flexbox-gap .get-name:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media (max-width: 63em) {
+  .no-flexbox-gap .player-box:not(:last-child) {
+    margin-bottom: 6.4rem;
+  }
+}
+
+@media (max-width: 43em) {
+  .no-flexbox-gap .get-name:not(:last-child) {
+    margin-bottom: 1.8rem;
+  }
+  .no-flexbox-gap .filter:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+}
